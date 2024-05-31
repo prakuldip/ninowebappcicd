@@ -33,6 +33,7 @@ jobs:
                 echo $AZURE_WEBAPP_NAME
                 echo $AZURE_WEBAPP_PACKAGE_PATH
                 pwd
+                echo $GITHUB_WORKSPACE
 
             
 
