@@ -3,7 +3,7 @@ on:
   workflow_dispatch
 jobs:
   clreanruns:
-    runs-on: ubuntu_latest
+    runs-on: ubuntu-latest
     steps:
       - name: Delete workflow runs
         uses: dmvict/clean-workflow-runs@v1.0.0
