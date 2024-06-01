@@ -1,0 +1,19 @@
+name: unwanted runs cleaning workflow
+on: 
+  workflow_dispatch
+jobs:
+  clreanruns:
+    runs-on: ubuntu_latest
+    steps:
+      - name: Delete workflow runs
+        uses: dmvict/clean-workflow-runs@v1.0.0
+        with:
+          token: ${{ secrets.PRIVATE_GITHUB_TOKEN }}
+          run_conclusions: |
+            failure
+            skipped
+          save_period: 5
+          save_min_runs_number: 0
+          dry: true
+      
+    
