@@ -15,6 +15,7 @@ jobs:
           run_conclusions: |
             failure
             skipped
+            cancelled
           save_period: 0
           save_min_runs_number: 0
       
