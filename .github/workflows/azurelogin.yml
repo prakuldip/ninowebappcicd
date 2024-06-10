@@ -1,0 +1,11 @@
+name: azure login test workflow
+on: 
+  workflow_dispatch
+jobs:
+  azurelogintest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: azure login test
+        uses: azure/login@v1
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
